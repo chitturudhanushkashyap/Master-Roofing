@@ -1,0 +1,149 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#f6f7fb;
+  color:#333;
+}
+
+/* NAVBAR */
+.navbar{
+  position:sticky;
+  top:0;
+  background:white;
+  padding:15px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+  z-index:1000;
+}
+
+.logo{
+  font-weight:600;
+  font-size:22px;
+  color:#0a7cff;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+
+.nav-links a:hover{
+  color:#0a7cff;
+}
+
+.btn{
+  background:#0a7cff;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  background:linear-gradient(120deg,#0a7cff,#00c6ff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+.hero-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:white;
+  color:#0a7cff;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.section h2{
+  margin-bottom:30px;
+  font-size:32px;
+}
+
+/* GRID PRODUCTS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.07);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* CONTACT */
+.contact{
+  background:#eaf3ff;
+}
+
+.contact-form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+.contact-form button{
+  background:#0a7cff;
+  color:white;
+  border:none;
+  padding:12px;
+  border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+  padding:20px;
+  background:#111;
+  color:white;
+  text-align:center;
+}
